@@ -1,0 +1,77 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #34495e;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #3498db;
+}
+
+.customer-info, .billing-info {
+    margin-bottom: 30px;
+}
+
+.customer-info h2, .billing-info h2 {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.customer-info p, .billing-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.print-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.print-button button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.print-button button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #bdc3c7;
+    padding-top: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #95a5a6;
+}

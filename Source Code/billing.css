@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1c1c2b; 
+    margin: 0;
+    padding: 0;
+    color: #2c3e50; 
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2a2a3b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #e9e9f5;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #5a5a7f;
+    border-radius: 8px;
+}
+
+.nav-links a.logout {
+    background-color: #ff4a57;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout:hover {
+    background-color: #e63748;
+}
+
+/* Billing Container */
+.billing-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #1c1c2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #2c3e50; /* Dark text color */
+}
+
+/* Billing Header */
+.billing-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.billing-header h1 {
+    font-size: 2.5rem;
+    color: yellow; 
+}
+
+/* Billing Content */
+.billing-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Bill Section */
+.bill-section {
+    width: 48%;
+    background-color: #1c1c2b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bill-section h2 {
+    color: skyblue;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.bill-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.bill-section strong {
+    font-weight: bold;
+}
+
+/* Payment History Table */
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.history-table th {
+    background-color: orange;
+    color: white;
+}
+
+.history-table tr:nth-child(even) {
+    background-color: #1c1c2b;
+    color: white
+}
+
+.history-table tr:nth-child(odd) {
+    background-color: #1c1c2b;
+    color: white
+}
+
+/* Pay Bill Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4a57;
+}
+
+/* Footer */
+.billing-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #bdc3c7;
+    margin-top: 40px;
+}
+
+.billing-footer p {
+    font-size: 1rem;
+    color: #95a5a6;
+}

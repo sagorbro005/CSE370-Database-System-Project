@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #1c1c2b;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #2a2a3b;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #f39c12;
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: #e9e9f5;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #5a5a7f;
+  border-radius: 8px;
+}
+
+.nav-links a.logout {
+  background-color: #ff4a57;
+  padding: 12px 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .logout:hover {
+  background-color: #e63748;
+}
+
+/* Dashboard Heading */
+.dashboard-heading {
+  text-align: center;
+  padding: 40px;
+}
+
+.dashboard-heading h2 {
+  font-size: 2.5rem;
+  color: yellowgreen;
+  font-weight: 700;
+}
+
+.dashboard-heading h3 {
+  font-size: 2rem;
+  color: yellow;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.customer-info-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.customer-info-box {
+  background-color: #262637;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 48%; /* Two boxes per row */
+}
+
+.customer-info-box p {
+  font-size: 1.4rem;
+}
+
+.customer-info-box strong {
+  color: #e4e4f1;
+}
+
+.customer-info-box span {
+  color: yellow;
+  font-weight: 600;
+}
+
+/* For Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .customer-info-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .customer-info-box {
+      width: 80%;
+      margin: 10px 0;
+  }
+}

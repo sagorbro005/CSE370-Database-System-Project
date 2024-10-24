@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1c1c2b; 
+    margin: 0;
+    padding: 0;
+    color: #2c3e50; 
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2a2a3b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #e9e9f5;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #5a5a7f;
+    border-radius: 8px;
+}
+
+.nav-links a.logout {
+    background-color: #ff4a57;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout:hover {
+    background-color: #e63748;
+}
+
+/* Help Page Container */
+.help-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    align-items: center;
+    background-color: #1c1c2b;
+    padding: 30px;
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    color: #ecf0f1; 
+}
+
+/* Help Header */
+.help-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.help-header h1 {
+    font-size: 2.5rem;
+    color: yellowgreen; 
+}
+
+/* Support Information */
+.support-info {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.support-info h2 {
+    color: yellow; 
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.support-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Office Hours */
+.office-hours h3 {
+    font-size: 1.5rem;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.office-hours p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+/* Help Footer */
+.help-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+    margin-top: 40px;
+}
+
+.help-footer p {
+    font-size: 1rem;
+    color: #ecf0f1;
+}

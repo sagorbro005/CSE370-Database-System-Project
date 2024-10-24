@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Now | Electricity Bill Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="paynow.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>Electricity Bill Management System</h1>
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.php">Dashboard</a>
+            <a href="profile.php">Profile</a>
+            <a href="billing.html">Billing</a>
+            <a href="help.html">Help</a>
+            <a href="login.html" class="logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment-container">
+        <header class="payment-header">
+            <h1>Pay Your Bill</h1>
+        </header>
+
+        <main class="payment-form-container">
+            <form action="paynow.html" method="POST" class="payment-form">
+                <!-- Amount Input -->
+                <div class="form-group">
+                    <label for="amount">Amount to Pay:</label>
+                    <input type="text" id="amount" name="amount" placeholder="Enter Amount" required>
+                </div>
+
+                <!-- Payment Method Input -->
+                <div class="form-group">
+                    <label for="payment-method">Choose Payment Method:</label>
+                    <select id="payment-method" name="payment_method" required>
+                        <option value="" disabled selected>Select Payment Method</option>
+                        <option value="credit_card">Credit Card</option>
+                        <option value="debit_card">Debit Card</option>
+                        <option value="mobile_payment">Mobile Payment</option>
+                    </select>
+                </div>
+
+                <!-- Card Information -->
+                <div class="card-info">
+                    <div class="form-group">
+                        <label for="card_number">Card Number</label>
+                        <input type="text" id="card_number" name="card_number" placeholder="Enter Card Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card_expiry">Expiry Date (MM/YY)</label>
+                        <input type="text" id="card_expiry" name="card_expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card_cvc">CVC</label>
+                        <input type="text" id="card_cvc" name="card_cvc" placeholder="CVC" required>
+                    </div>
+                </div>
+
+                <!-- Mobile Payment (Optional) -->
+                <div class="mobile-payment-info">
+                    <div class="form-group">
+                        <label for="mobile_number">Mobile Payment Number</label>
+                        <input type="text" id="mobile_number" name="mobile_number" placeholder="Enter Mobile Payment Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="transaction_id">Transaction ID</label>
+                        <input type="text" id="transaction_id" name="transaction_id" placeholder="Enter Transaction ID">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-buttons">
+                    <button type="submit">Pay Now</button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="payment-footer">
+            <p>&copy; 2024 Electricity Provider. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

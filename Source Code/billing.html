@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing | Electricity Bill Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <h1>Electricity Bill Management System</h1>
+        </div>
+        <div class="nav-links">
+            <a href="dashboard.php">Dashboard</a>
+            <a href="profile.php">Profile</a>
+            <a href="help.html">Help</a>
+            <a href="login.html" class="logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Billing Section -->
+    <div class="billing-container">
+        <header class="billing-header">
+            <h1>Billing Overview</h1>
+        </header>
+
+        <main class="billing-content">
+            <!-- Bill to Pay Section -->
+            <section class="bill-section">
+                <h2>Bill to Pay</h2>
+                <p><strong>Amount Due:</strong> 3000 BDT</p>
+                <p><strong>Current Month:</strong> September, 2024</p>
+                <p><strong>Due Date:</strong> September 30, 2024</p>
+            </section>
+
+            <!-- Bill Due Section -->
+            <!-- <section class="bill-section">
+                <h2>Bill Due</h2>
+                <p><strong>Total Due:</strong> $200.00</p>
+                <p><strong>Late Fee:</strong> $25.00</p>
+            </section> -->
+
+            <!-- Payment History Section -->
+            <section class="bill-section">
+                <h2>Payment History</h2>
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Amount Paid</th>
+                            <th>Transaction ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>August 1, 2024</td>
+                            <td>2534 BDT</td>
+                            <td>TXN123456</td>
+                        </tr>
+                        <tr>
+                            <td>July 1, 2024</td>
+                            <td>2879 BDT</td>
+                            <td>TXN654321</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Pay Bill Section -->
+            <section class="bill-section">
+                <h2>Pay Bill</h2>
+                <form action="paynow.html" method="POST">
+                    <!-- <div class="form-group">
+                        <label for="amount">Enter Amount to Pay:</label>
+                        <input type="text" id="amount" name="amount" placeholder="Enter Amount">
+                    </div> -->
+                    <button type="submit">Click Here to Pay Now</button>
+                </form>
+            </section>
+
+            <!-- Generate Invoice Section -->
+            <section class="bill-section">
+                <h2>Generate Invoice</h2>
+                <form action="invoice.php" method="POST">
+                    <button type="submit">Generate Invoice</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="billing-footer">
+            <p>&copy; 2024 Electricity Provider. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

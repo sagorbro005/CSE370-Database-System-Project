@@ -1,0 +1,141 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #1c1c2b; /* Matching background color */
+    margin: 0;
+    padding: 0;
+    color: #2c3e50; /* Matching text color */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2a2a3b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #e9e9f5;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #5a5a7f;
+    border-radius: 8px;
+}
+
+.nav-links a.logout {
+    background-color: #ff4a57;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout:hover {
+    background-color: #e63748;
+}
+.payment-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.payment-form-container {
+    padding: 20px;
+}
+
+.payment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.payment-form label {
+    font-size: 1.2rem;
+    color: #3498db;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.card-info,
+.mobile-payment-info {
+    margin-top: 20px;
+}
+
+.card-info .form-group,
+.mobile-payment-info .form-group {
+    margin-bottom: 20px;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+.form-buttons button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background-color: #2980b9;
+}
+
+.payment-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.payment-footer p {
+    font-size: 1rem;
+    color: #95a5a6;
+}

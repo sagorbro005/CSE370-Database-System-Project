@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  body {
+    background-color: #1c1c2b;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+/* Navigation Bar */
+.navbar {
+    background-color: #2a2a3b;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #e9e9f5;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #5a5a7f;
+    border-radius: 8px;
+}
+
+.nav-links a.logout {
+    background-color: #ff4a57;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .logout:hover {
+    background-color: #e63748;
+}
+  
+  /* Profile Heading */
+  .profile-heading {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .profile-heading h2 {
+    font-size: 2.5rem;
+    color: yellowgreen;
+    font-weight: 700;
+  }
+  
+  /* Profile Form */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .profile-form {
+    background-color: #2a2a3b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: yellow;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #1f1f30;
+    color: white;
+  }
+  
+  .form-group input[readonly] {
+    background-color: #1f1f30;
+    cursor: not-allowed;
+  }
+  
+  .form-group input::placeholder, 
+  .form-group textarea::placeholder {
+    color: yellow;
+  }
+  
+  .form-buttons {
+    text-align: center;
+  }
+  
+  .form-buttons button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-buttons button:hover {
+    background-color: #e63748;
+  }
+  
+  /* For Mobile Responsiveness */
+  @media only screen and (max-width: 768px) {
+    .profile-form {
+      width: 90%;
+    }
+  }
+  
